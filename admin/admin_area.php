@@ -96,7 +96,10 @@ if(empty($_SESSION['username'])){
 
         </nav>
         <!-- /.navbar-static-top -->
-
+         
+        <?php
+        if($_SESSION['level'] == 1 ){
+        ?>       
         <nav class="navbar-default navbar-static-side" role="navigation">
             <div class="sidebar-collapse">
                 <ul class="nav" id="side-menu">
@@ -154,6 +157,49 @@ if(empty($_SESSION['username'])){
             </div>
             <!-- /.sidebar-collapse -->
         </nav>
+        <?php
+        }else{
+        ?>
+        <nav class="navbar-default navbar-static-side" role="navigation">
+            <div class="sidebar-collapse">
+                <ul class="nav" id="side-menu">
+                    <li>
+                        <a href="#"><i class="glyphicon glyphicon-folder-close"></i> Master<span class="fa arrow"></span></a>
+                        <ul class="nav nav-second-level">
+                            <li>
+                                <a href="?page=buku.display"><i class="glyphicon glyphicon-book"></i> Buku</a>
+                            </li>       
+                            <li>
+                                <a href="?page=penerbit.display"><i class="glyphicon glyphicon-list"></i> Penerbit</a>
+                            </li>
+                            
+                            <li>
+                                <a href="?page=berita.display"><i class="glyphicon glyphicon-list-alt"></i> Berita</a>
+                            </li>
+                            <li>
+                                <a href="?page=anggota.display"><i class="fa fa-user fa-fw"></i> Anggota</a>
+                            </li>
+                            
+                        </ul>
+                        <!-- /.nav-second-level -->
+                    </li>
+                    
+                     <li>
+                        <a href="?page=pinjam.frm-idanggota"><i class="glyphicon glyphicon-th"></i> Transaksi</a>
+                    </li>
+                    
+                  <li>
+                        <a href="logout.php"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                    </li>
+                </ul>
+                <!-- /#side-menu -->
+            </div>
+            <!-- /.sidebar-collapse -->
+        </nav>    
+        <?php    
+        }
+        ?>
+        
         <!-- /.navbar-static-side -->
 
         <div id="page-wrapper">
