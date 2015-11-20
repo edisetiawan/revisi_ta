@@ -14,6 +14,7 @@ if($rows > 0 ){
     $data=mysql_fetch_array($result);
     $_SESSION['petugas_id']=$data['petuigas_id'];
     $_SESSION['username']=$data['petugas_username'];
+    $_SESSION['level']=$data['petugas_level'];
     header('location: admin_area.php');
 }else{
     header('location: index.php?action=gagal');
