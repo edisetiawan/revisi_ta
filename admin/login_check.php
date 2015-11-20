@@ -2,7 +2,7 @@
 require_once('inc-db.php');
 $var_username=mysql_real_escape_string($_POST['frm_username']);
 $var_password=mysql_real_escape_string(md5($_POST['frm_password']));
-$sql_check="select petugas_username,petugas_password from petugas 
+$sql_check="select petugas_username,petugas_password,petugas_level from petugas 
             where petugas_username='".$var_username."' and 
             petugas_password='".$var_password."'";
 //echo $sql_check; exit;
