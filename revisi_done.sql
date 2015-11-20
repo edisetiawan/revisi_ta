@@ -355,7 +355,7 @@ CREATE TABLE IF NOT EXISTS `petugas` (
 INSERT INTO `petugas` (`petugas_id`, `petugas_username`, `petugas_password`, `petugas_level`) VALUES
 (1, 'admin', '21232f297a57a5a743894a0e4a801fc3', 1),
 (2, 'joker', '21232f297a57a5a743894a0e4a801fc3', 2),
-(3, 'petugas1', 'b53fe7751b37e40ff34d012c7774d65f', 2);
+(3, 'petugas', 'afb91ef692fd08c445e8cb1bab2ccf9c', 2);
 
 -- --------------------------------------------------------
 
