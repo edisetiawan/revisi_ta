@@ -36,13 +36,13 @@ function kiRim(){
                         <div class="panel-body">
                             <div class="row">
                                 <div class="col-lg-12">
-                                    <form method="post" action="?page=laporan.show-laporan-denda">
+                                    <form method="post" action="?page=laporan.show-laporan-denda" onsubmit="return kiRim()">
                                     <div class="row">
                                        <div class="col-lg-4">
                                         <div class="form-group">
 								            <label>Tanggal Awal</label>
 									           <div class="input-group date form_date col-md-10" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
-									               <input class="form-control" size="10" type="text" name="frm_tanggal_awal"/>
+									               <input class="form-control" size="10" type="text" name="frm_tanggal_awal" id="awal"/>
    
 									                   <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
                                               </div>
@@ -53,7 +53,7 @@ function kiRim(){
                                         <div class="form-group">
 								            <label>Tanggal Selesai</label>
 								        	   <div class="input-group date form_date col-md-10" data-date="" data-date-format="yyyy-mm-dd" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
-									               <input class="form-control" size="10" type="text" name="frm_tanggal_selesai"/>
+									               <input class="form-control" size="10" type="text" name="frm_tanggal_selesai" id="akhir"/>
 									               <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
 								            </div>
 			                            </div>
