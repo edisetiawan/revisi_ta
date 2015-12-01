@@ -7,7 +7,7 @@ $denda=$_POST['denda'];
 //echo "denda :".$denda; exit;
 if($denda > 0){
     $sql_insert_denda="insert into denda values ('','".$pinjam_id."','".$denda."')";
-    $result_denda=mysql_query($sql_insert);
+    $result_denda=mysql_query($sql_insert_denda);
     //echo $sql_insert_denda; exit;
     $sql_pinjam="update pinjaman set status_pinjam='2',tanggal_kembali='".$tanggal_kembali."' where kode_buku='".$kode_buku."' and pinjam_id='".$pinjam_id."'";
     //echo $sql_pinjam; exit;
