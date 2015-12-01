@@ -16,6 +16,17 @@
   //echo $var_tanggal_selesai;
   
   ?>
+  <script language="JavaScript">
+function kiRim(){
+        var awal = document.getElementById('awal').value;
+        var akhir = document.getElementById('akhir').value;
+        if(awal > akhir){
+        alert('Tanggal selesai tidak boleh lebih besar dari tanggal awal ');
+        return false;
+        }
+       
+}
+</script>
   <div class="row"> 
                 <div class="col-lg-12">
                     <div class="panel panel-default">
